@@ -97,4 +97,4 @@ To customize and tweak the algorithm to perform better, you can play around with
 
 ### Training
 
-Run the algorithm for multiple LC files and make a pickle for yourself with `./jux/false_positive_detection.py`. Check out its function of `train_isolationForest_`. Make a bette pickle, else I will try to update this.
+Run the algorithm for multiple LC files and make a pickle for yourself with `./jux/false_positive_detection.py`. Check out its function of `train_isolationForest_`. Make a better pickle, else I will try to update this.
