@@ -1,5 +1,12 @@
 # Inter-IIT-Tech-Meet-2022
 
-[min_max_algo.ipynb](./trial/min_max_algo.ipynb) : FFT filtering then Time duration on the basis of Maximas and Minimas
+## Introduction
+Submission for the 10<sup>th</sup> Inter IIT Tech Meet for the ISRO Mid-Prep Problem Statement by Team 10, i.e. IIT Kanpur
 
-[threshold_algo.ipynb](./trial/threshold_algo.ipynb) : Moving Average Filtering followed by Time compression and Time duration on the basis of Slope Thresholding
+## Structure
+This repository contains 2 directories:
+1. JuX - The final submitted python package for lightcurve data processing
+2. trial - Playground for the same
+
+## Working
+The presentation, live demo and questions / answers about the submission can be viewed <a href="https://youtu.be/NgTuupeuetw?t=10710" target="_blank">here</a>
