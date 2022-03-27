@@ -1,9 +1,11 @@
 # JuX : Solar X-Ray Burst Detector
 
+<img align="right" style="padding-left: 20px" width="190" height="190" src="./assets/logo.jpg">
+
 This package was created by Team 10 on the account of Inter IIT Techmeet 10.
 It's concerned with identification and analysis of solar xray bursts in provided light curves.
 
-How to install it?  
+## How to install it?  
 While being in the `jux` package directory, do
 
 ```bash
