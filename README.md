@@ -10,3 +10,6 @@ This repository contains 2 directories:
 
 ## Working
 The presentation, live demo and questions / answers about the submission can be viewed <a href="https://youtu.be/NgTuupeuetw?t=10710" target="_blank">here</a>
+
+## Downloadable Contents
+The lightcurve files can be downloaded from the <a href="https://pradan.issdc.gov.in/pradan/protected/browse.xhtml?id=xsm" target="_blank">ISRO website</a>
