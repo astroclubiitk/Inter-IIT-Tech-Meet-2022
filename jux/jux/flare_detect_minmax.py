@@ -131,24 +131,23 @@ def get_lvl_4_sp_(xnew, ynew, _s3, _p3, should_plot=False):
             ynew,
         )
         plt.show()
-
-    _s4 = np.array(_s4)
-    _p4 = np.array(_p4)
     return _s4, _p4
 
 
 def get_lvl_5_sp_(xnew, ynew, _s4, _p4, should_plot=False):
     # a filter for too close peaks
+    li = []
     for i in range(len(_p4) - 3):
         if (xnew[_p4[i + 1]] - xnew[_p4[i]] < THRESHOLD_X_NOISE_LVL5) and (
             np.abs(ynew[_p4[i + 1]] - ynew[_p4[i]]) < THRESHOLD_Y_NOISE_LVL5
         ):
             if ynew[_p4[i + 1]] > ynew[_p4[i]]:
-                _p4.pop(i)
-                _s4.pop(i)
+                li.append(i)
             elif ynew[_p4[i + 1]] < ynew[_p4[i]]:
-                _p4.pop(i + 1)
-                _s4.pop(i + 1)
+                li.append(i+1)
+    for index in sorted(li, reverse=True):
+        del _s4[index]
+        del _p4[index]
     if should_plot:
         plt.figure(figsize=(30, 10))
         plt.title("Final Start and Peak")
@@ -199,8 +198,6 @@ def get_lvl_0_e_(xnew, ynew, _s5, _p5, _s0, should_plot=False):
             ynew,
         )
         plt.show()
-
-    _e0 = np.array(_e0)
     return _e0
 
 
@@ -232,6 +229,5 @@ def get_lvl_1_e_(xnew, ynew, _s0, _p5, _e0, should_plot=False):
             ynew,
         )
         plt.show()
-
     _e1 = np.array(_e1)
     return _e1
